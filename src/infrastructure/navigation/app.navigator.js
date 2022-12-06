@@ -4,6 +4,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 import { Text } from "react-native";
 
+import { HomeNavigator } from "./home.navigator";
+
 const Tab = createBottomTabNavigator();
 
 const TAB_ICON = {
@@ -13,9 +15,6 @@ const TAB_ICON = {
   Profile: "person",
 };
 
-const Home = () => {
-  <Text>Home</Text>;
-};
 const Chat = () => {
   <Text>Chat</Text>;
 };
@@ -44,10 +43,34 @@ export const AppNavigator = () => (
         inactiveTintColor: "gray",
       }}
     >
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Chat" component={Chat} />
-      <Tab.Screen name="Marketplace" component={Marketplace} />
-      <Tab.Screen name="Profile" component={Profile} />
+      <Tab.Screen
+        name="Home"
+        component={HomeNavigator}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Tab.Screen
+        name="Chat"
+        component={Chat}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Tab.Screen
+        name="Marketplace"
+        component={Marketplace}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Tab.Screen
+        name="Profile"
+        component={Profile}
+        options={{
+          headerShown: false,
+        }}
+      />
     </Tab.Navigator>
   </NavigationContainer>
 );
