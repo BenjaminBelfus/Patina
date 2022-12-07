@@ -1,43 +1,39 @@
 import styled from "styled-components/native";
+import { Button } from "react-native-paper";
 
 export const TopBoxContainer = styled.View`
   display: flex;
   row-gap: 10px;
   justify-content: space-around;
-  flex-wrap: wrap;
-  flex_direction: row;
+  flex_direction: column;
   padding: 5px;
   width: 100%;
+  background-color: blue;
+`;
+
+export const ButtonContainer = styled.View`
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  margin: 5px;
+  border-radius: 5px;
+  justify-content: space-around;
+  background-color: yellow;
+`;
+
+export const CustomButton = styled(Button)`
+  flex-grow: 1;
+  background-color: pink;
 `;
 
 export const SearchContainer = styled.View`
-  width: 100%;
   padding: ${(props) => props.theme.space[1]};
-`;
-
-export const ContentContainer = styled.View`
-  height: 30%;
-  width: 100%
-  justify-content: center;
-  align-items: center;
-  background-color: lightgray;
-  border-radius: 10px;
-  margin: 5px;
-`;
-
-export const ForumContainer = styled.View`
-  height: 30%;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  background-color: lightgray;
-  border-radius: 10px;
-  margin: 5px;
 `;
 
 export const GroupSelectionContainer = styled.View`
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 30;
+  background-color: red;
+  font-weight: bolder;
 `;

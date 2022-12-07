@@ -1,12 +1,12 @@
 import React from "react";
-import { Text, Searchbar } from "react-native-paper";
+import { Text, Searchbar, Button } from "react-native-paper";
 import { TouchableOpacity } from "react-native";
 
 import {
   GroupSelectionContainer,
+  ButtonContainer,
+  CustomButton,
   TopBoxContainer,
-  ContentContainer,
-  ForumContainer,
   SearchContainer,
 } from "./topbox.style";
 
@@ -17,16 +17,10 @@ export const TopBox = () => {
         <Text> Group Name</Text>
       </GroupSelectionContainer>
       <TopBoxContainer>
-        <TouchableOpacity>
-          <ContentContainer>
-            <Text>Content</Text>
-          </ContentContainer>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <ForumContainer>
-            <Text>Forum</Text>
-          </ForumContainer>
-        </TouchableOpacity>
+        <ButtonContainer>
+          <CustomButton>Click Me</CustomButton>
+          <CustomButton>Click Me Too</CustomButton>
+        </ButtonContainer>
         <SearchContainer>
           <Searchbar></Searchbar>
         </SearchContainer>
