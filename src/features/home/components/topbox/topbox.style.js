@@ -8,7 +8,6 @@ export const TopBoxContainer = styled.View`
   flex_direction: column;
   padding: 5px;
   width: 100%;
-  background-color: blue;
 `;
 
 export const ButtonContainer = styled.View`
@@ -16,14 +15,13 @@ export const ButtonContainer = styled.View`
   flex-direction: row;
   flex-grow: 1;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 1px;
   justify-content: space-around;
-  background-color: yellow;
 `;
 
 export const CustomButton = styled(Button)`
   flex-grow: 1;
-  background-color: pink;
+  background-color: lightgray;
 `;
 
 export const SearchContainer = styled.View`
@@ -34,6 +32,5 @@ export const GroupSelectionContainer = styled.View`
   align-items: center;
   justify-content: center;
   display: flex;
-  background-color: red;
   font-weight: bolder;
 `;

@@ -5,6 +5,7 @@ import {
 } from "@react-navigation/stack";
 
 import { HomeScreen } from "../../features/home/screens/home.screen";
+import { HomeForumScreen } from "../../features/home/screens/home.forum.screen";
 
 const homeStack = createStackNavigator();
 
@@ -15,6 +16,7 @@ export const HomeNavigator = () => {
       screenOptions={{ ...TransitionPresets.ModalPresentationIOS }}
     >
       <homeStack.Screen name="Content" component={HomeScreen} />
+      <homeStack.Screen name="Forum" component={HomeForumScreen} />
     </homeStack.Navigator>
   );
 };
